@@ -1,0 +1,66 @@
+.container {
+  margin: 150px auto;
+  max-width: 60%;
+  padding: 20px;
+}
+.container h2 {
+  text-align: center;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container li {
+  border-bottom: solid 3px black;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bigbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bigbox button {
+  color: black;
+  font-weight: bolder;
+  background-color: purple;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.bigbox button:hover {
+  background-color: blueviolet;
+}
+
+.innerBox {
+  display: flex;
+  justify-content: space-around;
+}
+.innerBox h3 {
+  color: rgb(15, 3, 15);
+}
+.innerBox p {
+  font-weight: 300;
+  color: rgb(126, 91, 158);
+}
+
+.innerBox img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: "Brush Script MT", cursive;
+  color: rgb(179, 7, 78);
+  font-size: larger;
+  font-weight: bold;
+}

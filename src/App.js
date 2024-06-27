@@ -1,10 +1,12 @@
-import React from 'react';
-
+import React from "react";
+import Header from "./UI/Header";
+import FormData from "./Form/Data";
 
 function App() {
   return (
     <div>
-      <h1>Hii Lets start working</h1>
+      <Header />
+      <FormData />
     </div>
   );
 }

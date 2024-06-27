@@ -8,4 +8,11 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensures the body takes up the full height of the viewport */
+  background-image: url("https://64.media.tumblr.com/cba65f95ed8c40b70472ccf7b83e283a/10ca3e42bdca24c8-5e/s1280x1920/f0750210b81af95896fef94769e10a8ada233a1c.jpg"); /* Replace with the path to your image */
+  background-size: cover; /* Scales the image to cover the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+  background-attachment: fixed;
 }
