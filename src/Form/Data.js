@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import Card from "../UI/Card";
 import classes from "./Data.module.css";
+import Context from "../Context/CreateContext";
 
 const btsAlbums = [
   {
@@ -50,12 +52,16 @@ const btsAlbums = [
 ];
 
 function FormData() {
+  const ctx = useContext(Context);
+  const AdditionHandler = (user) => {
+    ctx.addItem(user);
+  };
   return (
     <Card className={classes.container}>
       <h2>The Tours</h2>
       <ul>
         {btsAlbums.map((user) => (
-          <li>
+          <li key={user.albumName}>
             <div className={classes.bigbox}>
               <div className={classes.innerBox}>
                 <img src={user.photo} alt="bts images" />
@@ -66,7 +72,9 @@ function FormData() {
                 </div>
               </div>
               <div>
-                <button>Add To Cart</button>
+                <button onClick={() => AdditionHandler(user)}>
+                  Add To Cart
+                </button>
               </div>
             </div>
             <div className={classes.description}>{user.description}</div>

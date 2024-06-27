@@ -1,0 +1,18 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  width: 60%;
+  background-color: rgb(221, 90, 133);
+  z-index: 100;
+}

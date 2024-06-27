@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 10px;
+  height: 400px; /* Set a fixed height */
+  overflow-y: auto;
+}
+
+.container h1 {
+  color: rgb(32, 4, 41);
+  text-align: center;
+  font-family: "Lobster", cursive;
+  border-bottom: 3px solid magenta;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid magenta;
+  margin-bottom: 10px;
+}
+
+.details {
+  margin: 15px;
+  padding: 0;
+}
+
+.details h5 {
+  color: rgb(32, 1, 32);
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+}
+
+.increase {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.decrease {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.totalAmount {
+  text-align: end;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  font-weight: bolder;
+  border-bottom: 3px solid magenta;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.btn1 {
+  color: purple;
+  font-weight: bolder;
+  background-color: transparent;
+  border: 2px solid purple;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.btn2 {
+  color: rgb(241, 240, 238);
+  font-weight: bolder;
+  background-color: purple;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
