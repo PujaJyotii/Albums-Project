@@ -18,7 +18,7 @@ const Cart = (props) => {
       <h1>Your Cart</h1>
       <ul>
         {ctx.items.map((item) => (
-          <li key={item.albumName}>
+          <li key={item.id}>
             <div className={classes.newChanges}>
               <img src={item.photo} alt="item" />
               <div className={classes.details}>

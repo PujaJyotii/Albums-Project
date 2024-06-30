@@ -53,8 +53,10 @@ const btsAlbums = [
 
 function FormData() {
   const ctx = useContext(Context);
+
   const AdditionHandler = (user) => {
     ctx.addItem(user);
+    console.log(user);
   };
   return (
     <Card className={classes.container}>
